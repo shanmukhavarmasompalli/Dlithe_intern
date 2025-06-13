@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semantic Layout Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    header, nav, section, article, aside, footer {
+      padding: 20px;
+      margin: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    header {
+      background-color: #007acc;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .main {
+      display: flex;
+      gap: 20px;
+    }
+
+    article {
+      flex: 2;
+    }
+
+    aside {
+      flex: 1;
+      background-color: #e9e9e9;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Semantic Webpage</h1>
+    <p>Welcome to a clean and structured HTML layout!</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="main">
+    <article>
+      <h2>Main Article</h2>
+      <p>This is the main content area. Articles typically contain standalone information or stories.</p>
+    </article>
+
+    <aside>
+      <h3>Related Info</h3>
+      <p>This is an aside element, often used for side notes, links, or advertisements.</p>
+    </aside>
+  </section>
+
+  <footer>
+    <p>Footer of the website</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navigation Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      transition: background 0.3s;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    section {
+      padding: 100px 20px;
+      height: 400px;
+      display: none; /* Hide all by default */
+    }
+
+    .active {
+      display: block; /* Show only the selected section */
+    }
+
+    #home { background-color: #f4f4f4; }
+    #about { background-color: #e2e2e2; }
+    #services { background-color: #d0d0d0; }
+    #portfolio { background-color: #bfbfbf; }
+    #contact { background-color: #afafaf; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('about')">About</a>
+    <a onclick="showSection('services')">Services</a>
+    <a onclick="showSection('portfolio')">Portfolio</a>
+    <a onclick="showSection('contact')">Contact</a>
+  </nav>
+
+  <section id="home" class="active">
+    <h2>Home Section</h2>
+    <p>Welcome to the homepage!</p>
+  </section>
+
+  <section id="about">
+    <h2>About Section</h2>
+    <p>Learn more about us here.</p>
+  </section>
+
+  <section id="services">
+    <h2>Services Section</h2>
+    <p>Explore our services.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio Section</h2>
+    <p>Check out our work.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Section</h2>
+    <p>Get in touch with us.</p>
+  </section>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>

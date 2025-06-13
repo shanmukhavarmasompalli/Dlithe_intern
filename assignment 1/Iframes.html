@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wikipedia in an iFrame</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    h1 {
+      color: #007acc;
+    }
+
+    .description {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Embedded Wikipedia Page</h1>
+  <p class="description">
+    Below is an embedded view of the Wikipedia homepage using an iframe. You can scroll through and interact with the content without leaving this page.
+  </p>
+
+  <iframe src="https://en.wikipedia.org" title="Wikipedia Homepage">
+    Your browser does not support iframes.
+  </iframe>
+
+</body>
+</html>

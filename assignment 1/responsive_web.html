@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Design Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+    }
+
+    nav a:hover {
+      background-color: #444;
+    }
+
+    main {
+      display: flex;
+      flex-direction: row;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    article {
+      flex: 3;
+      background-color: white;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    aside {
+      flex: 1;
+      background-color: #eaeaea;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    /* Responsive layout for smaller screens */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      main {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Responsive Web Page</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+    <article>
+      <h2>Main Content</h2>
+      <p>This section adjusts its layout based on the screen size.</p>
+    </article>
+
+    <aside>
+      <h3>Sidebar</h3>
+      <p>This moves below the content on smaller screens.</p>
+    </aside>
+  </main>
+
+  <footer>
+    Footer of the web Page
+  </footer>
+
+</body>
+</html>

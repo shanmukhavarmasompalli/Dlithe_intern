@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Pricing Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      padding: 2rem;
+    }
+
+    .pricing-container {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      flex: 1 1 300px;
+      max-width: 320px;
+      transition: transform 0.3s ease;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+
+    .card ul li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .card .price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Highlight Pro plan */
+    .card.pro {
+      background: #007BFF;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    .card.pro:hover {
+      transform: scale(1.08);
+    }
+
+    .card.pro ul li {
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .card.pro .price {
+      color: #fff;
+    }
+
+    /* Responsive layout for small screens */
+    @media (max-width: 768px) {
+      .pricing-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align: center;">Our Pricing Plans</h1>
+
+  <div class="pricing-container">
+    <div class="card">
+      <h2>Basic</h2>
+      <p class="price">$9/month</p>
+      <ul>
+        <li>1 User</li>
+        <li>10GB Storage</li>
+        <li>Email Support</li>
+      </ul>
+    </div>
+
+    <div class="card pro">
+      <h2>Pro</h2>
+      <p class="price">$29/month</p>
+      <ul>
+        <li>5 Users</li>
+        <li>100GB Storage</li>
+        <li>Priority Support</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Premium</h2>
+      <p class="price">$59/month</p>
+      <ul>
+        <li>Unlimited Users</li>
+        <li>1TB Storage</li>
+        <li>24/7 Support</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
