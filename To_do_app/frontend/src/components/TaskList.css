@@ -1,0 +1,46 @@
+.section-title {
+  color: #333;
+  margin-top: 2rem;
+}
+
+.empty-text {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task.completed {
+  background: #d3f9d8;
+  text-decoration: line-through;
+}
+
+.task-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+}
+
+.task-buttons button {
+  margin-left: 8px;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.task-buttons button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}

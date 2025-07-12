@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(120deg, #3f87a6, #ebf8e1, #f69d3c);
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  background: white;
+  margin-top: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #ff4e50, #f9d423);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+.input-container button {
+  background-color: #7b2ff7;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-container button:hover {
+  background-color: #4b0082;
+}
